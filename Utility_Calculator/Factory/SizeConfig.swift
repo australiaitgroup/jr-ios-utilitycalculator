@@ -15,7 +15,6 @@ struct SizeConfig {
     static let resultLabelWidth = UIScreen.main.bounds.size.width  / 10 * 8
     static let processLabelHeight = UIScreen.main.bounds.size.height / 10 * 2.3 / 3.5
     static let processLabelWidth = UIScreen.main.bounds.size.width / 10 * 8.5
-
     static let keyPadHeight = UIScreen.main.bounds.size.height / 10 * 6.7
     static let marginWidth = UIScreen.main.bounds.size.width / 24
     static let buttonWidth = UIScreen.main.bounds.size.width / 6

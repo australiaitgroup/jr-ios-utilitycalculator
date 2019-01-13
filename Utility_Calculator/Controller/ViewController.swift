@@ -204,14 +204,14 @@ class ViewController: UIViewController {
             for item in keyPadView.operatorButtons{
                 item.backgroundColor = ColorConfig.mainViewBackgroundColorRight1
             }
-            keyPadView.buttonNe.backgroundColor = .white
+            keyPadView.buttonNe.backgroundColor = ColorConfig.keyPadViewNumberButtonBackgroundColor1
             
             sideDrawerView.backgroundColor = ColorConfig.mainViewBackgroundColorLeft1
             
             keyPadView.switchButton.onTintColor = ColorConfig.mainViewBackgroundColorLeft1
             
-            mainView.processLabel.textColor = .black
-            mainView.resultLabel.textColor = .black
+            mainView.processLabel.textColor = ColorConfig.mainViewProcessLableColor1
+            mainView.resultLabel.textColor = ColorConfig.mainViewResultLabelTextColor1
         }
         else if sender.tag == 2{
             mainView.layer.sublayers?[0].removeFromSuperlayer()
@@ -227,14 +227,14 @@ class ViewController: UIViewController {
             for item in keyPadView.operatorButtons{
                 item.backgroundColor = ColorConfig.mainViewBackgroundColorRight2
             }
-            keyPadView.buttonNe.backgroundColor = .white
+            keyPadView.buttonNe.backgroundColor = ColorConfig.keyPadViewNumberButtonBackgroundColor2
             
             sideDrawerView.backgroundColor = ColorConfig.mainViewBackgroundColorLeft2
             
             keyPadView.switchButton.onTintColor = ColorConfig.mainViewBackgroundColorLeft2
             
-            mainView.processLabel.textColor = .darkGray
-            mainView.resultLabel.textColor = .darkGray
+            mainView.processLabel.textColor = ColorConfig.mainViewProcessLableColor2
+            mainView.resultLabel.textColor = ColorConfig.mainViewResultLabelTextColor2
         }
         else if sender.tag == 3{
             mainView.layer.sublayers?[0].removeFromSuperlayer()
@@ -250,14 +250,14 @@ class ViewController: UIViewController {
             for item in keyPadView.operatorButtons{
                 item.backgroundColor = ColorConfig.keyPadViewOperatorButtonColor3
             }
-            keyPadView.buttonNe.backgroundColor = .white
+            keyPadView.buttonNe.backgroundColor = ColorConfig.keyPadViewNumberButtonBackgroundColor3
             
             sideDrawerView.backgroundColor = ColorConfig.mainViewBackgroundColorLeft3
             
             keyPadView.switchButton.onTintColor = ColorConfig.mainViewBackgroundColorLeft3
             
-            mainView.processLabel.textColor = .white
-            mainView.resultLabel.textColor = .white
+            mainView.processLabel.textColor = ColorConfig.mainViewProcessLableColor3
+            mainView.resultLabel.textColor = ColorConfig.mainViewResultLabelTextColor3
      
         }
     }

@@ -27,7 +27,15 @@ struct ColorConfig {
     static let mainViewBackgroundColorRight3 = UIColor(red: (0 / 255.0), green: (0 / 255.0), blue: (0 / 255.0), alpha: 1)
     static let mainViewProcessLableColor3 = UIColor(red: (0 / 255.0), green: (0 / 255.0), blue: (0/255.0), alpha: 1)
     static let keyPadViewBackgroundColorLeft3 = UIColor(red: (0 / 255.0), green: (0 / 255.0), blue: (0 / 255.0), alpha: 1)
-    static let keyPadViewBackgroundColorRight3 = UIColor(red: (0 / 255.0), green: (0 / 255.0), blue:(0 / 255.0), alpha: 1)
-    static let keyPadViewNumberButtonBackgroundColor3 = UIColor.white
+    static let keyPadViewBackgroundColorRight3 = UIColor(red: (0 / 255.0), green: (0 / 255.0), blue:(0 / 255.0), alpha: 1)    
     static let keyPadViewOperatorButtonColor3 = UIColor(red: (243 / 255.0), green: (173 / 255.0), blue:(34 / 255.0), alpha: 1)
+    static let keyPadViewNumberButtonBackgroundColor3 = UIColor.white
+    
+    static let mainViewProcessLabelTextColor1 = UIColor.black
+    static let mainViewProcessLabelTextColor2 = UIColor.darkGray
+    static let mainViewProcessLabelTextColor3 = UIColor.white
+    
+    static let mainViewResultLabelTextColor1 = UIColor.black
+    static let mainViewResultLabelTextColor2 = UIColor.darkGray
+    static let mainViewResultLabelTextColor3 = UIColor.white
 }

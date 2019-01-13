@@ -11,8 +11,6 @@ import UIKit
 class SideDrawerView: UIView {
     var button10 = UIButton(),button11 = UIButton(),button12 = UIButton(), button7 = UIButton(), button8 = UIButton(), button9 = UIButton(),button4 = UIButton(), button5 = UIButton(), button6 = UIButton(), button1 = UIButton(), button2 = UIButton(), button3 = UIButton(), unaryButtons:[UIButton] = [],colorButtons:[UIButton] = []
     
-
-    
     var sideDrawerViewGradientLayer1  = CalculatorGradiantLayer()
     var sideDrawerViewGradientLayer2  = CalculatorGradiantLayer()
     var sideDrawerViewGradientLayer3  = CalculatorGradiantLayer()
