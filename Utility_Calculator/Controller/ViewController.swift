@@ -210,7 +210,7 @@ class ViewController: UIViewController {
             
             keyPadView.switchButton.onTintColor = ColorConfig.mainViewBackgroundColorLeft1
             
-            mainView.processLabel.textColor = ColorConfig.mainViewProcessLableColor1
+            mainView.processLabel.textColor = ColorConfig.mainViewProcessLabelTextColor1
             mainView.resultLabel.textColor = ColorConfig.mainViewResultLabelTextColor1
         }
         else if sender.tag == 2{
@@ -233,7 +233,7 @@ class ViewController: UIViewController {
             
             keyPadView.switchButton.onTintColor = ColorConfig.mainViewBackgroundColorLeft2
             
-            mainView.processLabel.textColor = ColorConfig.mainViewProcessLableColor2
+            mainView.processLabel.textColor = ColorConfig.mainViewProcessLabelTextColor2
             mainView.resultLabel.textColor = ColorConfig.mainViewResultLabelTextColor2
         }
         else if sender.tag == 3{
@@ -256,7 +256,8 @@ class ViewController: UIViewController {
             
             keyPadView.switchButton.onTintColor = ColorConfig.mainViewBackgroundColorLeft3
             
-            mainView.processLabel.textColor = ColorConfig.mainViewProcessLableColor3
+            mainView.processLabel.textColor = ColorConfig.mainViewProcessLabelTextColor3
+
             mainView.resultLabel.textColor = ColorConfig.mainViewResultLabelTextColor3
      
         }
