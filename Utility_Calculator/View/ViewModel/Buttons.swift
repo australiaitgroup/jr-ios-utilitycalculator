@@ -13,7 +13,7 @@ class Buttons: UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
+
     
     init(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat,title: String, fontSize: CGFloat, cornerRadius: CGFloat, backgroundColor: UIColor, titleColor: UIColor, manager: UIView) {
         
@@ -25,7 +25,6 @@ class Buttons: UIButton {
         self.backgroundColor = backgroundColor
         self.setTitleColor(titleColor, for: .normal)
         self.addTarget(self, action: #selector(onClickButtonsAnimation), for: .touchUpInside)
-        manager.addSubview(self)
     }
     
 
