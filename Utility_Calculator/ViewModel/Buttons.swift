@@ -13,7 +13,7 @@ class Buttons: UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
+
     
     init(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat,title: String, fontSize: CGFloat, cornerRadius: CGFloat, backgroundColor: UIColor, titleColor: UIColor, manager: UIView) {
         
