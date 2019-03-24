@@ -12,6 +12,16 @@ class KeyPadView: UIView {
     var keyPadViewGradientLayer1  = CalculatorGradiantLayer()
     var keyPadViewGradientLayer2  = CalculatorGradiantLayer()
     var keyPadViewGradientLayer3  = CalculatorGradiantLayer()
+    var keyPadViewGradientLayer4  = CalculatorGradiantLayer()
+    var keyPadViewGradientLayer5  = CalculatorGradiantLayer()
+    var keyPadViewGradientLayer6  = CalculatorGradiantLayer()
+    var keyPadViewGradientLayer7  = CalculatorGradiantLayer()
+    var keyPadViewGradientLayer8  = CalculatorGradiantLayer()
+    var keyPadViewGradientLayer9  = CalculatorGradiantLayer()
+    var keyPadViewGradientLayer10  = CalculatorGradiantLayer()
+    var keyPadViewGradientLayer11  = CalculatorGradiantLayer()
+    var keyPadViewGradientLayer12  = CalculatorGradiantLayer()
+    
     
     private var buttonFontSize: CGFloat = 0.0
     
@@ -66,6 +76,24 @@ class KeyPadView: UIView {
         keyPadViewGradientLayer2.setLayerProps(parent: self.bounds, leftColor: ColorConfig.keyPadViewBackgroundColorLeft2.cgColor, rightColor: ColorConfig.keyPadViewBackgroundColorRight2.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
         
         keyPadViewGradientLayer3.setLayerProps(parent: self.bounds, leftColor: ColorConfig.keyPadViewBackgroundColorLeft3.cgColor, rightColor: ColorConfig.keyPadViewBackgroundColorRight3.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        keyPadViewGradientLayer4.setLayerProps(parent: self.bounds, leftColor: ColorConfig.keyPadViewBackgroundColorLeft4.cgColor, rightColor: ColorConfig.keyPadViewBackgroundColorRight4.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        keyPadViewGradientLayer5.setLayerProps(parent: self.bounds, leftColor: ColorConfig.keyPadViewBackgroundColorLeft5.cgColor, rightColor: ColorConfig.keyPadViewBackgroundColorRight5.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        keyPadViewGradientLayer6.setLayerProps(parent: self.bounds, leftColor: ColorConfig.keyPadViewBackgroundColorLeft6.cgColor, rightColor: ColorConfig.keyPadViewBackgroundColorRight6.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        keyPadViewGradientLayer7.setLayerProps(parent: self.bounds, leftColor: ColorConfig.keyPadViewBackgroundColorLeft7.cgColor, rightColor: ColorConfig.keyPadViewBackgroundColorRight7.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        keyPadViewGradientLayer8.setLayerProps(parent: self.bounds, leftColor: ColorConfig.keyPadViewBackgroundColorLeft8.cgColor, rightColor: ColorConfig.keyPadViewBackgroundColorRight8.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        keyPadViewGradientLayer9.setLayerProps(parent: self.bounds, leftColor: ColorConfig.keyPadViewBackgroundColorLeft9.cgColor, rightColor: ColorConfig.keyPadViewBackgroundColorRight9.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        keyPadViewGradientLayer10.setLayerProps(parent: self.bounds, leftColor: ColorConfig.keyPadViewBackgroundColorLeft10.cgColor, rightColor: ColorConfig.keyPadViewBackgroundColorRight10.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        keyPadViewGradientLayer11.setLayerProps(parent: self.bounds, leftColor: ColorConfig.keyPadViewBackgroundColorLeft11.cgColor, rightColor: ColorConfig.keyPadViewBackgroundColorRight11.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        keyPadViewGradientLayer12.setLayerProps(parent: self.bounds, leftColor: ColorConfig.keyPadViewBackgroundColorLeft12.cgColor, rightColor: ColorConfig.keyPadViewBackgroundColorRight12.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
     }
     
     

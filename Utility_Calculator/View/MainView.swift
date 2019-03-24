@@ -15,6 +15,15 @@ class MainView: UIView {
     var mainViewGradientLayer1  = CalculatorGradiantLayer()
     var mainViewGradientLayer2  = CalculatorGradiantLayer()
     var mainViewGradientLayer3  = CalculatorGradiantLayer()
+    var mainViewGradientLayer4  = CalculatorGradiantLayer()
+    var mainViewGradientLayer5  = CalculatorGradiantLayer()
+    var mainViewGradientLayer6  = CalculatorGradiantLayer()
+    var mainViewGradientLayer7  = CalculatorGradiantLayer()
+    var mainViewGradientLayer8  = CalculatorGradiantLayer()
+    var mainViewGradientLayer9  = CalculatorGradiantLayer()
+    var mainViewGradientLayer10  = CalculatorGradiantLayer()
+    var mainViewGradientLayer11  = CalculatorGradiantLayer()
+    var mainViewGradientLayer12  = CalculatorGradiantLayer()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -49,6 +58,24 @@ class MainView: UIView {
         mainViewGradientLayer2.setLayerProps(parent: self.bounds, leftColor: ColorConfig.mainViewBackgroundColorLeft2.cgColor, rightColor: ColorConfig.mainViewBackgroundColorRight2.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
         
         mainViewGradientLayer3.setLayerProps(parent: self.bounds, leftColor: ColorConfig.mainViewBackgroundColorRight3.cgColor, rightColor: ColorConfig.mainViewBackgroundColorRight3.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        mainViewGradientLayer4.setLayerProps(parent: self.bounds, leftColor: ColorConfig.mainViewBackgroundColorLeft4.cgColor, rightColor: ColorConfig.mainViewBackgroundColorRight4.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        mainViewGradientLayer5.setLayerProps(parent: self.bounds, leftColor: ColorConfig.mainViewBackgroundColorLeft5.cgColor, rightColor: ColorConfig.mainViewBackgroundColorRight5.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        mainViewGradientLayer6.setLayerProps(parent: self.bounds, leftColor: ColorConfig.mainViewBackgroundColorRight6.cgColor, rightColor: ColorConfig.mainViewBackgroundColorRight6.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        mainViewGradientLayer7.setLayerProps(parent: self.bounds, leftColor: ColorConfig.mainViewBackgroundColorLeft7.cgColor, rightColor: ColorConfig.mainViewBackgroundColorRight7.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        mainViewGradientLayer8.setLayerProps(parent: self.bounds, leftColor: ColorConfig.mainViewBackgroundColorLeft8.cgColor, rightColor: ColorConfig.mainViewBackgroundColorRight8.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        mainViewGradientLayer9.setLayerProps(parent: self.bounds, leftColor: ColorConfig.mainViewBackgroundColorRight9.cgColor, rightColor: ColorConfig.mainViewBackgroundColorRight9.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        mainViewGradientLayer10.setLayerProps(parent: self.bounds, leftColor: ColorConfig.mainViewBackgroundColorLeft10.cgColor, rightColor: ColorConfig.mainViewBackgroundColorRight10.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        mainViewGradientLayer11.setLayerProps(parent: self.bounds, leftColor: ColorConfig.mainViewBackgroundColorLeft11.cgColor, rightColor: ColorConfig.mainViewBackgroundColorRight11.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
+        
+        mainViewGradientLayer12.setLayerProps(parent: self.bounds, leftColor: ColorConfig.mainViewBackgroundColorRight12.cgColor, rightColor: ColorConfig.mainViewBackgroundColorRight12.cgColor, leftLocation: 0.0, rightLocation: 1.0, leftStartPoint: 0, rightStartPoint: 0, leftEndPoint: 1, rightEndPoint: 0)
     }
     
     

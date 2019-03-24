@@ -8,8 +8,13 @@
 
 import UIKit
 
-class SideDrawerView: UIView {
-    var button10 = UIButton(),button11 = UIButton(),button12 = UIButton(), button7 = UIButton(), button8 = UIButton(), button9 = UIButton(),button4 = UIButton(), button5 = UIButton(), button6 = UIButton(), button1 = UIButton(), button2 = UIButton(), button3 = UIButton(), unaryButtons:[UIButton] = [],colorButtons:[UIButton] = []
+class SideDrawerView: UIScrollView {
+    var button10 = UIButton(),button11 = UIButton(),button12 = UIButton(), button7 = UIButton(), button8 = UIButton(), button9 = UIButton(),button4 = UIButton(), button5 = UIButton(), button6 = UIButton()
+    
+    var unaryButtons:[UIButton] = [],colorButtons:[UIButton] = []
+    
+    //M: color buttons
+    var buttonC1 = UIButton(), buttonC2 = UIButton(), buttonC3 = UIButton(),buttonC4 = UIButton(), buttonC5 = UIButton(), buttonC6 = UIButton(),buttonC7 = UIButton(), buttonC8 = UIButton(), buttonC9 = UIButton(),buttonC10 = UIButton(), buttonC11 = UIButton(), buttonC12 = UIButton()
     
     var sideDrawerViewGradientLayer1  = CalculatorGradiantLayer()
     var sideDrawerViewGradientLayer2  = CalculatorGradiantLayer()
@@ -41,6 +46,8 @@ class SideDrawerView: UIView {
     
     func setViewFrameSize(){
         self.frame = CGRect(x: -(SizeConfig.mainWidth - 2 * SizeConfig.marginWidth - SizeConfig.buttonWidth), y: SizeConfig.mainHeight / 10 * 3.3 + SizeConfig.marginHeight, width: SizeConfig.mainWidth - 2 * SizeConfig.marginWidth - SizeConfig.buttonWidth, height: SizeConfig.marginHeight * 4.12)
+        
+        self.contentSize = CGSize(width: self.bounds.width, height: self.bounds.height * 1.5)
     }
     
     
@@ -61,7 +68,7 @@ class SideDrawerView: UIView {
     func groupButtons(){
         unaryButtons = [button10, button11, button12, button7, button8, button9, button4, button5, button6]
         
-        colorButtons = [button1, button2, button3]
+        colorButtons = [buttonC1, buttonC2, buttonC3, buttonC4, buttonC5, buttonC6, buttonC7, buttonC8, buttonC9, buttonC10, buttonC11, buttonC12 ]
     }
     
     
@@ -99,13 +106,43 @@ class SideDrawerView: UIView {
     
     
     func addColorButtons(){
-        button1 = Buttons.init(x: SizeConfig.marginWidth, y: SizeConfig.marginHeight * 3 + SizeConfig.marginWidth, width: SizeConfig.buttonWidth, height:  SizeConfig.buttonWidth, title: "", fontSize: buttonFontSize, cornerRadius: 0.5 * SizeConfig.buttonWidth, backgroundColor: ColorConfig.keyPadViewBackgroundColorLeft1, titleColor: UIColor.black, manager: self)
-        button1.tag = 1
+        buttonC1 = Buttons.init(x: SizeConfig.marginWidth, y: SizeConfig.marginHeight * 3 + SizeConfig.marginWidth, width: SizeConfig.buttonWidth, height:  SizeConfig.buttonWidth, title: "", fontSize: buttonFontSize, cornerRadius: 0.5 * SizeConfig.buttonWidth, backgroundColor: ColorConfig.keyPadViewBackgroundColorLeft1, titleColor: UIColor.black, manager: self)
+        buttonC1.tag = 1
         
-        button2 = Buttons.init(x: SizeConfig.marginWidth * 7, y: SizeConfig.marginHeight * 3 + SizeConfig.marginWidth, width: SizeConfig.buttonWidth, height:  SizeConfig.buttonWidth, title: "", fontSize: buttonFontSize, cornerRadius: 0.5 * SizeConfig.buttonWidth, backgroundColor: ColorConfig.keyPadViewBackgroundColorRight2, titleColor: UIColor.black, manager: self)
-        button2.tag = 2
+        buttonC2 = Buttons.init(x: SizeConfig.marginWidth * 7, y: SizeConfig.marginHeight * 3 + SizeConfig.marginWidth, width: SizeConfig.buttonWidth, height:  SizeConfig.buttonWidth, title: "", fontSize: buttonFontSize, cornerRadius: 0.5 * SizeConfig.buttonWidth, backgroundColor: ColorConfig.keyPadViewBackgroundColorRight2, titleColor: UIColor.black, manager: self)
+        buttonC2.tag = 2
         
-        button3 = Buttons.init(x: SizeConfig.marginWidth * 13, y: SizeConfig.marginHeight * 3 + SizeConfig.marginWidth, width: SizeConfig.buttonWidth, height:  SizeConfig.buttonWidth, title: "", fontSize: buttonFontSize, cornerRadius: 0.5 * SizeConfig.buttonWidth, backgroundColor: .gray , titleColor: UIColor.black, manager: self)
-        button3.tag = 3
+        buttonC3 = Buttons.init(x: SizeConfig.marginWidth * 13, y: SizeConfig.marginHeight * 3 + SizeConfig.marginWidth, width: SizeConfig.buttonWidth, height:  SizeConfig.buttonWidth, title: "", fontSize: buttonFontSize, cornerRadius: 0.5 * SizeConfig.buttonWidth, backgroundColor: .gray , titleColor: UIColor.black, manager: self)
+        buttonC3.tag = 3
+        
+        
+        buttonC4 = Buttons.init(x: SizeConfig.marginWidth, y: SizeConfig.marginHeight * 4 + SizeConfig.marginWidth, width: SizeConfig.buttonWidth, height:  SizeConfig.buttonWidth, title: "", fontSize: buttonFontSize, cornerRadius: 0.5 * SizeConfig.buttonWidth, backgroundColor: ColorConfig.keyPadViewBackgroundColorRight4, titleColor: UIColor.black, manager: self)
+        buttonC4.tag = 4
+        
+        buttonC5 = Buttons.init(x: SizeConfig.marginWidth * 7, y: SizeConfig.marginHeight * 4 + SizeConfig.marginWidth, width: SizeConfig.buttonWidth, height:  SizeConfig.buttonWidth, title: "", fontSize: buttonFontSize, cornerRadius: 0.5 * SizeConfig.buttonWidth, backgroundColor: ColorConfig.keyPadViewBackgroundColorRight5, titleColor: UIColor.black, manager: self)
+        buttonC5.tag = 5
+        
+        buttonC6 = Buttons.init(x: SizeConfig.marginWidth * 13, y: SizeConfig.marginHeight * 4 + SizeConfig.marginWidth, width: SizeConfig.buttonWidth, height:  SizeConfig.buttonWidth, title: "", fontSize: buttonFontSize, cornerRadius: 0.5 * SizeConfig.buttonWidth, backgroundColor: ColorConfig.keyPadViewBackgroundColorLeft6 , titleColor: UIColor.black, manager: self)
+        buttonC6.tag = 6
+        
+        
+        buttonC7 = Buttons.init(x: SizeConfig.marginWidth, y: SizeConfig.marginHeight * 5 + SizeConfig.marginWidth, width: SizeConfig.buttonWidth, height:  SizeConfig.buttonWidth, title: "", fontSize: buttonFontSize, cornerRadius: 0.5 * SizeConfig.buttonWidth, backgroundColor: ColorConfig.keyPadViewBackgroundColorRight7, titleColor: UIColor.black, manager: self)
+        buttonC7.tag = 7
+        
+//        buttonC8 = Buttons.init(x: SizeConfig.marginWidth * 7, y: SizeConfig.marginHeight * 5 + SizeConfig.marginWidth, width: SizeConfig.buttonWidth, height:  SizeConfig.buttonWidth, title: "", fontSize: buttonFontSize, cornerRadius: 0.5 * SizeConfig.buttonWidth, backgroundColor: ColorConfig.keyPadViewBackgroundColorLeft8, titleColor: UIColor.black, manager: self)
+//        buttonC8.tag = 8
+//
+//        buttonC9 = Buttons.init(x: SizeConfig.marginWidth * 13, y: SizeConfig.marginHeight * 5 + SizeConfig.marginWidth, width: SizeConfig.buttonWidth, height:  SizeConfig.buttonWidth, title: "", fontSize: buttonFontSize, cornerRadius: 0.5 * SizeConfig.buttonWidth, backgroundColor: ColorConfig.keyPadViewBackgroundColorLeft9 , titleColor: UIColor.black, manager: self)
+//        buttonC9.tag = 9
+//
+//
+//        buttonC10 = Buttons.init(x: SizeConfig.marginWidth, y: SizeConfig.marginHeight * 6 + SizeConfig.marginWidth, width: SizeConfig.buttonWidth, height:  SizeConfig.buttonWidth, title: "", fontSize: buttonFontSize, cornerRadius: 0.5 * SizeConfig.buttonWidth, backgroundColor: ColorConfig.keyPadViewBackgroundColorLeft10, titleColor: UIColor.black, manager: self)
+//        buttonC10.tag = 10
+//
+//        buttonC11 = Buttons.init(x: SizeConfig.marginWidth * 7, y: SizeConfig.marginHeight * 6 + SizeConfig.marginWidth, width: SizeConfig.buttonWidth, height:  SizeConfig.buttonWidth, title: "", fontSize: buttonFontSize, cornerRadius: 0.5 * SizeConfig.buttonWidth, backgroundColor: ColorConfig.keyPadViewBackgroundColorLeft11, titleColor: UIColor.black, manager: self)
+//        buttonC11.tag = 11
+//
+//        buttonC12 = Buttons.init(x: SizeConfig.marginWidth * 13, y: SizeConfig.marginHeight * 6 + SizeConfig.marginWidth, width: SizeConfig.buttonWidth, height:  SizeConfig.buttonWidth, title: "", fontSize: buttonFontSize, cornerRadius: 0.5 * SizeConfig.buttonWidth, backgroundColor:ColorConfig.keyPadViewBackgroundColorLeft12, titleColor: UIColor.black, manager: self)
+//        buttonC12.tag = 12
     }
 }

@@ -261,6 +261,121 @@ class ViewController: UIViewController {
             mainView.resultLabel.textColor = ColorConfig.mainViewResultLabelTextColor3
      
         }
+        else if sender.tag == 4{
+            mainView.layer.sublayers?[0].removeFromSuperlayer()
+            mainView.layer.insertSublayer(mainView.mainViewGradientLayer4, at: 0)
+            mainView.setNeedsDisplay()
+            
+            keyPadView.layer.sublayers?[0].removeFromSuperlayer()
+            keyPadView.layer.insertSublayer(keyPadView.keyPadViewGradientLayer4, at: 0)
+            keyPadView.setNeedsDisplay()
+            
+            mainView.processLabel.backgroundColor = ColorConfig.mainViewProcessLableColor4
+            
+            for item in keyPadView.operatorButtons{
+                item.backgroundColor = ColorConfig.mainViewBackgroundColorRight4
+            }
+            keyPadView.buttonNe.backgroundColor = ColorConfig.keyPadViewNumberButtonBackgroundColor4
+            
+            sideDrawerView.backgroundColor = ColorConfig.mainViewBackgroundColorLeft4
+            
+            keyPadView.switchButton.onTintColor = ColorConfig.mainViewBackgroundColorLeft4
+            
+            mainView.processLabel.textColor = ColorConfig.mainViewProcessLabelTextColor4
+            mainView.resultLabel.textColor = ColorConfig.mainViewResultLabelTextColor4
+        }
+        else if sender.tag == 5{
+            mainView.layer.sublayers?[0].removeFromSuperlayer()
+            mainView.layer.insertSublayer(mainView.mainViewGradientLayer5, at: 0)
+            mainView.setNeedsDisplay()
+            
+            keyPadView.layer.sublayers?[0].removeFromSuperlayer()
+            keyPadView.layer.insertSublayer(keyPadView.keyPadViewGradientLayer5, at: 0)
+            keyPadView.setNeedsDisplay()
+            
+            mainView.processLabel.backgroundColor = ColorConfig.mainViewProcessLableColor5
+            
+            for item in keyPadView.operatorButtons{
+                item.backgroundColor = ColorConfig.mainViewBackgroundColorRight5
+            }
+            keyPadView.buttonNe.backgroundColor = ColorConfig.keyPadViewNumberButtonBackgroundColor5
+            
+            sideDrawerView.backgroundColor = ColorConfig.mainViewBackgroundColorLeft5
+            
+            keyPadView.switchButton.onTintColor = ColorConfig.mainViewBackgroundColorLeft5
+            
+            mainView.processLabel.textColor = ColorConfig.mainViewProcessLabelTextColor5
+            mainView.resultLabel.textColor = ColorConfig.mainViewResultLabelTextColor5
+        }
+        else if sender.tag == 6{
+            mainView.layer.sublayers?[0].removeFromSuperlayer()
+            mainView.layer.insertSublayer(mainView.mainViewGradientLayer6, at: 0)
+            mainView.setNeedsDisplay()
+            
+            keyPadView.layer.sublayers?[0].removeFromSuperlayer()
+            keyPadView.layer.insertSublayer(keyPadView.keyPadViewGradientLayer6, at: 0)
+            keyPadView.setNeedsDisplay()
+            
+            mainView.processLabel.backgroundColor = ColorConfig.mainViewProcessLableColor6
+            
+            for item in keyPadView.operatorButtons{
+                item.backgroundColor = ColorConfig.mainViewBackgroundColorRight6
+            }
+            keyPadView.buttonNe.backgroundColor = ColorConfig.keyPadViewNumberButtonBackgroundColor6
+            
+            sideDrawerView.backgroundColor = ColorConfig.mainViewBackgroundColorLeft6
+            
+            keyPadView.switchButton.onTintColor = ColorConfig.mainViewBackgroundColorLeft6
+            
+            mainView.processLabel.textColor = ColorConfig.mainViewProcessLabelTextColor6
+            mainView.resultLabel.textColor = ColorConfig.mainViewResultLabelTextColor6
+        }
+        else if sender.tag == 7{
+            mainView.layer.sublayers?[0].removeFromSuperlayer()
+            mainView.layer.insertSublayer(mainView.mainViewGradientLayer7, at: 0)
+            mainView.setNeedsDisplay()
+            
+            keyPadView.layer.sublayers?[0].removeFromSuperlayer()
+            keyPadView.layer.insertSublayer(keyPadView.keyPadViewGradientLayer7, at: 0)
+            keyPadView.setNeedsDisplay()
+            
+            mainView.processLabel.backgroundColor = ColorConfig.mainViewProcessLableColor7
+            
+            for item in keyPadView.operatorButtons{
+                item.backgroundColor = ColorConfig.mainViewBackgroundColorRight7
+            }
+            keyPadView.buttonNe.backgroundColor = ColorConfig.keyPadViewNumberButtonBackgroundColor7
+            
+            sideDrawerView.backgroundColor = ColorConfig.mainViewBackgroundColorLeft7
+            
+            keyPadView.switchButton.onTintColor = ColorConfig.mainViewBackgroundColorLeft7
+            
+            mainView.processLabel.textColor = ColorConfig.mainViewProcessLabelTextColor7
+            mainView.resultLabel.textColor = ColorConfig.mainViewResultLabelTextColor7
+        }
+//        else if sender.tag == 8{
+//            mainView.layer.sublayers?[0].removeFromSuperlayer()
+//            mainView.layer.insertSublayer(mainView.mainViewGradientLayer8, at: 0)
+//            mainView.setNeedsDisplay()
+//            
+//            keyPadView.layer.sublayers?[0].removeFromSuperlayer()
+//            keyPadView.layer.insertSublayer(keyPadView.keyPadViewGradientLayer8, at: 0)
+//            keyPadView.setNeedsDisplay()
+//            
+//            mainView.processLabel.backgroundColor = ColorConfig.mainViewProcessLableColor8
+//            
+//            for item in keyPadView.operatorButtons{
+//                item.backgroundColor = ColorConfig.mainViewBackgroundColorRight8
+//            }
+//            keyPadView.buttonNe.backgroundColor = ColorConfig.keyPadViewNumberButtonBackgroundColor8
+//            
+//            sideDrawerView.backgroundColor = ColorConfig.mainViewBackgroundColorLeft8
+//            
+//            keyPadView.switchButton.onTintColor = ColorConfig.mainViewBackgroundColorLeft8
+//            
+//            mainView.processLabel.textColor = ColorConfig.mainViewProcessLabelTextColor8
+//            mainView.resultLabel.textColor = ColorConfig.mainViewResultLabelTextColor8
+//        }
     }
     
 }
