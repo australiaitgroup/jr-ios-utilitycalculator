@@ -67,7 +67,7 @@ struct ColorConfig {
     static let mainViewBackgroundColorRight8 = UIColor(red: (208 / 255.0), green: (212 / 255.0), blue: (215 / 255.0), alpha: 1)
     static let mainViewProcessLableColor8 = UIColor(red: (0 / 255.0), green: (0 / 255.0), blue: (0/255.0), alpha: 1)
     static let keyPadViewBackgroundColorLeft8 = UIColor(red: (117 / 255.0), green: (118 / 255.0), blue: (123 / 255.0), alpha: 1)
-    static let keyPadViewBackgroundColorRight8 = UIColor(red: (56 / 255.0), green: (57 / 255.0), blue:(61 / 255.0), alpha: 1)
+    static let keyPadViewBackgroundColorRight8 = UIColor(red: (56 / 255.0), green: (57 / 255.0), blue:(0 / 255.0), alpha: 1)
     static let keyPadViewOperatorButtonColor8 = UIColor(red: (255 / 255.0), green: (198 / 255.0), blue:(51 / 255.0), alpha: 1)
     static let keyPadViewNumberButtonBackgroundColor8 = UIColor.white
     
